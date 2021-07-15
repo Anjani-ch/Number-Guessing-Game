@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    background: rgb(125, 125, 201);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+#wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#modal-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+#modal-wrapper #modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px 30px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 2px rgb(202, 197, 197);
+    text-align: center;
+}
+
+#modal-wrapper #modal #close-modal {
+    position: absolute;
+    top: -5px;
+    right: 15px;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+#modal-wrapper #modal input {
+    padding: 10px 15px;
+    border: 1px solid grey;
+    outline: 0;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 1.2rem;
+    box-sizing: border-box;
+}
+
+#modal-wrapper #modal #name-feedback {
+    color: red;
+    display: none;
+}
+
+#wrapper .section {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    margin: 25px 0;
+    text-align: center;
+    border-radius: 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px 2px rgb(202, 197, 197);
+}
+
+#wrapper #game #timer {
+    display: none;
+}
+
+#wrapper #game input {
+    padding: 15px 25px;
+    border-radius: 30px;
+    border: 1px solid grey;
+    font-size: 7rem;
+    outline: 0;
+    width: 35%;
+    text-align: center;
+}
+
+#wrapper #game h3 {
+    font-size: 1.6rem;
+}
+
+#wrapper #game #restart {
+    padding: 10px;
+    background: rgb(125, 125, 201);
+    color: white;
+    border-radius: 5px;
+    display: none;
+    border: 0;
+    cursor: pointer;
+}
+
+#wrapper #scoreboard table {
+    margin: 30px auto;
+    font-size: 1.8rem;
+    border-collapse: collapse;
+}
+
+#wrapper #scoreboard table thead tr th,
+#wrapper #scoreboard table tbody tr td {
+    padding: 10px 30px;
+}
+
+#wrapper #scoreboard table thead tr th.border-right,
+#wrapper #scoreboard table tbody tr td.border-right {
+    border-right: 1px solid lightgrey;
+}
+
+#wrapper #scoreboard table tbody tr td {
+    border-top: 1px solid lightgrey;
+}
