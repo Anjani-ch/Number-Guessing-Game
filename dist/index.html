@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="js/firebaseConfig.js" type="text/javascript"></script>
+    <script src="js/index.js" type="text/javascript" defer></script>
+    <title>Number Guessing Game</title>
+</head>
+
+<body>
+    <div id="modal-wrapper">
+        <div id="modal">
+            <p id="close-modal">X</p>
+            <h1>Good Job! You Qualified For Top 3</h1>
+            <h2>Your Total Guesses were <span id="total-guesses"></span></h2>
+            <h2>You Tok <span id="final-minutes"></span> Minutes And <span id="final-seconds"></span> Seconds To Guess
+                The Number</h2>
+            <p>Enter Name If You Want To Add Your Score</p>
+            <input id="name-input" type="text" placeholder="Enter Name">
+            <h2 id="name-feedback">Name Is Taken</h2>
+        </div>
+    </div>
+
+    <div id="wrapper" class="container">
+        <div id="game" class="section">
+            <h1>Guess Number Between 1 And 100</h1>
+            <h1 id="timer"><span id="timer-minutes">00</span>:<span id="timer-seconds">00</span></h1>
+            <input id="guess-input" type="text">
+            <h3 id="feedback">Enter Guess To Start</h3>
+            <h3>Total Guesses: <span id="guesses">0</span></h3>
+            <button id="restart">Play Again</button>
+        </div>
+        <div id="scoreboard" class="section">
+            <h1>Top 3 Players</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="border-right">Name</th>
+                        <th>Guesses</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

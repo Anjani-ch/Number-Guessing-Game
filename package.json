@@ -1,0 +1,15 @@
+{
+  "name": "number_guessing_game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Anjani Pranav Reddy Chapparapu",
+  "license": "ISC",
+  "homepage": "anjani-ch.github.io/Number_Guessing_Game",
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
